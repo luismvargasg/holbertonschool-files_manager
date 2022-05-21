@@ -5,6 +5,7 @@ import DBClient from '../utils/db';
 const { ObjectId } = require('mongodb');
 const fs = require('fs');
 const Bull = require('bull');
+const mime = require('mime-types');
 
 class FilesController {
   static async postUpload(request, response) {
